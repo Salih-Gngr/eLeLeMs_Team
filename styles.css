@@ -1,0 +1,138 @@
+/* Genel stil */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #3D348B, #7678ED); /* Turkuaz maviden koyu maviye gradyan */
+  color: #333; /* Koyu metin rengi */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ortak container stili */
+.container,
+#info-form,
+#suggestion-container,
+#new-suggestion-btn,
+#slogan-container {
+  background-color: rgba(224, 224, 224, 0.9); /* Yarı saydam gri */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+#welcome{
+  background-color: #F18701;
+  color: #3D348B;
+  padding: 30px 40px;
+  border-radius: 30px;
+}
+
+/* Başlıklar ve slogan */
+h1,
+#motto{
+  color: #fff; /* Koyu turkuaz */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+
+#slogan {
+  color: #F7B801; /* Koyu turkuaz */
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  min-height: 80px;
+
+}
+
+#slogan-container {
+  color: #ffffff;
+  background-color: rgba(0, 0, 139, 0.7); /* Yarı saydam koyu mavi */
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+/* Form stili */
+#info-form {
+  background: #F7B801;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+#info-form label {
+  font-size: 1.2em;
+}
+
+#info-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 20px;
+  border: none;
+
+}
+
+#info-form input::placeholder {
+  color: #333;
+}
+
+/* Button stili */
+button,
+#submit-info {
+  font-size: 1.2em;
+  padding: 12px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s;
+}
+
+button {
+  background-color: #F18701;
+  color: #fff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Hareketli resimler */
+.image-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 20%;
+}
+
+#left-image,
+#right-image {
+  width: 150px;
+  height: auto;
+  animation: move 5s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

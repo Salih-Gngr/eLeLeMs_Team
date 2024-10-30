@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Aile Etkinlik Önerileri</title>
+  </head>
+  <body>
+    <h2 id="motto">MUTLU BİR AİLE, MUTLU BİR DÜNYA</h2>
+    <div id="slogan-container">
+      <p id="slogan"></p>
+    </div>
+    <h1 id="welcome">Hoşgeldiniz</h1>
+    <div id="info-form">
+      <input
+        type="number"
+        id="child-count"
+        placeholder="Kaç çocuğunuz var?"
+        required
+      />
+      <input
+        type="text"
+        id="child-ages"
+        placeholder="Çocuğunuzun/çocuklarınızın yaşı?"
+        required
+      />
+    </div>
+    <button id="submit-info">Bilgileri Gönder</button>
+    <div id="suggestion-container" style="display: none">
+      <p id="suggestion"></p>
+      <img id="suggestion-image" src="" alt="Etkinlik resmi" />
+    </div>
+    <button id="new-suggestion-btn" style="display: none">Yeni Öneri</button>
+    <script src="script.js"></script>
+  </body>
+</html>
